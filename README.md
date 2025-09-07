@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://mateusrissodiblasio.github.io/Product-list-with-cart-solution/)
 
 ## My process
 
@@ -49,16 +49,11 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+There are many ways to achieve this final result, but within the process I've only used what i know so far, so it became harder, therefore solving this challenge showed me that, although its not the simpler way, I did it, and this motivates me to keep going.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
+Manipulating data, json files, which I didn't do on this challenge. Learning how to simplify coding with proper knowledge.
 
 ## Author
 
