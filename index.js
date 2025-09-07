@@ -24,31 +24,31 @@
         if(screen.width <= 375){
             
             const mobileItem1Img = document.querySelector('.product-1');
-            mobileItem1Img.src = `/assets/images/${item1Img[1]}.jpg`;
+            mobileItem1Img.src = `./assets/images/${item1Img[1]}.jpg`;
             
             const mobileItem2Img = document.querySelector('.product-2');
-            mobileItem2Img.src = `/assets/images/${item2Img[1]}.jpg`;
+            mobileItem2Img.src = `./assets/images/${item2Img[1]}.jpg`;
 
             const mobileItem3Img = document.querySelector('.product-3');
-            mobileItem3Img.src = `/assets/images/${item3Img[1]}.jpg`;
+            mobileItem3Img.src = `./assets/images/${item3Img[1]}.jpg`;
 
             const mobileItem4Img = document.querySelector('.product-4');
-            mobileItem4Img.src = `/assets/images/${item4Img[1]}.jpg`;
+            mobileItem4Img.src = `./assets/images/${item4Img[1]}.jpg`;
 
             const mobileItem5Img = document.querySelector('.product-5');
-            mobileItem5Img.src = `/assets/images/${item5Img[1]}.jpg`;
+            mobileItem5Img.src = `./assets/images/${item5Img[1]}.jpg`;
 
             const mobileItem6Img = document.querySelector('.product-6');
-            mobileItem6Img.src = `/assets/images/${item6Img[1]}.jpg`;
+            mobileItem6Img.src = `./assets/images/${item6Img[1]}.jpg`;
 
             const mobileItem7Img = document.querySelector('.product-7');
-            mobileItem7Img.src = `/assets/images/${item7Img[1]}.jpg`;
+            mobileItem7Img.src = `./assets/images/${item7Img[1]}.jpg`;
 
             const mobileItem8Img = document.querySelector('.product-8');
-            mobileItem8Img.src = `/assets/images/${item8Img[1]}.jpg`;
+            mobileItem8Img.src = `./assets/images/${item8Img[1]}.jpg`;
 
             const mobileItem9Img = document.querySelector('.product-9');
-            mobileItem9Img.src = `/assets/images/${item9Img[1]}.jpg`;
+            mobileItem9Img.src = `./assets/images/${item9Img[1]}.jpg`;
         }
     }
     checkScreenSize();
