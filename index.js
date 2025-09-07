@@ -1664,7 +1664,7 @@ function confirmOrder(){
     ordercontainer.appendChild(msg);
     msg.classList.add("carbonMsg");
     const carbonimg = document.createElement("img");
-    carbonimg.src = '/assets/images/icon-carbon-neutral.svg';
+    carbonimg.src = './assets/images/icon-carbon-neutral.svg';
     carbonimg.alt = 'carbon-neutral';
     msg.appendChild(carbonimg);
 
@@ -1779,7 +1779,7 @@ function orderConfirmed(){
     orderConfirmedBox.appendChild(orderConfirmedBoxMsg);
 
     const confirmedSign = document.createElement("img");
-    confirmedSign.src = '/assets/images/icon-order-confirmed.svg';
+    confirmedSign.src = './assets/images/icon-order-confirmed.svg';
     confirmedSign.alt = 'Confirm green logo';
     orderConfirmedBoxMsg.appendChild(confirmedSign);
 
@@ -1805,14 +1805,6 @@ function orderConfirmed(){
             const elementsToRemove = clonedElement.querySelectorAll('.removeFromOrder');
             elementsToRemove.forEach(el => el.remove());
         });
-
-        
-
-        // const elementToRemove = clonedElement.querySelector('.orderList');
-        // console.log(elementToRemove);
-            // if (elementToRemove) {
-            //     elementToRemove.remove();
-            // }
         
         createdElementsItemsTotalValue.forEach(function(element) {
             const clonedElementTotalValue = element.cloneNode(true); // Deep clone
@@ -1850,7 +1842,7 @@ function orderConfirmed(){
 
         for (let i = 0; i < children2.length; i++) {
             const imgElement = document.createElement('img');
-            imgElement.src = `/assets/images/${item1Img[0]}.jpg`;
+            imgElement.src = `./assets/images/${item1Img[0]}.jpg`;
             // children2[i].appendChild(imgElement);
             children2[i].insertBefore(imgElement, localToInsert[i]);
         };
@@ -1858,49 +1850,49 @@ function orderConfirmed(){
         const changeItem2Img = document.querySelector('.Item2');
         if (changeItem2Img !== null) {
         const changeImg2 = changeItem2Img.querySelector('img');
-        changeImg2.src = `/assets/images/${item2Img[0]}.jpg`
+        changeImg2.src = `./assets/images/${item2Img[0]}.jpg`
         }
 
         const changeItem3Img = document.querySelector('.Item3');
         if (changeItem3Img !== null) {
         const changeImg3 = changeItem3Img.querySelector('img');
-        changeImg3.src = `/assets/images/${item3Img[0]}.jpg`
+        changeImg3.src = `./assets/images/${item3Img[0]}.jpg`
         }
 
         const changeItem4Img = document.querySelector('.Item4');
         if (changeItem4Img !== null) {
         const changeImg4 = changeItem4Img.querySelector('img');
-        changeImg4.src = `/assets/images/${item4Img[0]}.jpg`
+        changeImg4.src = `./assets/images/${item4Img[0]}.jpg`
         }
         
         const changeItem5Img = document.querySelector('.Item5');
         if (changeItem5Img !== null) {
         const changeImg5 = changeItem5Img.querySelector('img');
-        changeImg5.src = `/assets/images/${item5Img[0]}.jpg`
+        changeImg5.src = `./assets/images/${item5Img[0]}.jpg`
         }
         
         const changeItem6Img = document.querySelector('.Item6');
         if (changeItem6Img !== null) {
         const changeImg6 = changeItem6Img.querySelector('img');
-        changeImg6.src = `/assets/images/${item6Img[0]}.jpg`
+        changeImg6.src = `./assets/images/${item6Img[0]}.jpg`
         }
 
         const changeItem7Img = document.querySelector('.Item7');
         if (changeItem7Img !== null) {
         const changeImg7 = changeItem7Img.querySelector('img');
-        changeImg7.src = `/assets/images/${item7Img[0]}.jpg`
+        changeImg7.src = `./assets/images/${item7Img[0]}.jpg`
         }        
         
         const changeItem8Img = document.querySelector('.Item8');
         if (changeItem8Img !== null) {
         const changeImg8 = changeItem8Img.querySelector('img');
-        changeImg8.src = `/assets/images/${item8Img[0]}.jpg`
+        changeImg8.src = `./assets/images/${item8Img[0]}.jpg`
         }
         
         const changeItem9Img = document.querySelector('.Item9');
         if (changeItem9Img !== null) {
         const changeImg9 = changeItem9Img.querySelector('img');
-        changeImg9.src = `/assets/images/${item9Img[0]}.jpg`
+        changeImg9.src = `./assets/images/${item9Img[0]}.jpg`
         }           
 
 
