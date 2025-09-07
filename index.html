@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  
+
+  <section>
+    
+    <div>
+      <h1>Desserts</h1>
+    
+      <div class="container">
+      
+        <div class="item">
+          <img class="product-1" src="./assets/images/image-waffle-desktop.jpg" alt="Waffle with Berries">        
+          <div class="button" id="item1" onclick="addFirstItem1(); addOnOrderItem1(); openningOrder();">
+            <span id="addToCart" class="addToCart">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="cart">Add to Cart
+            </span>
+          </div>
+          <div class="divButtons hide" id="item1Button">
+            <div class="sumButtons" id="rembutton" onclick="remItem()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 2"><path  d="M0 .375h10v1.25H0V.375Z"/></svg>
+            </div> <p id="sumItem1"></p>
+            <div class="sumButtons" id="addbutton" onclick="addItem()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path  d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
+            </div> 
+          </div>
+          <div class="product-specs">
+            <p class="product-name">Waffle</p>
+            <p class="product-description">Waffle with Berries</p>
+            <p class="product-price">6.50</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img class="product-2" src="./assets/images/image-creme-brulee-desktop.jpg" alt="Waffle with Berries">        
+          <div class="button" id="item2" onclick="addFirstItem2(); addOnOrderItem2(); openningOrder();">
+            <span id="addToCart" class="addToCart">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="cart">Add to Cart
+            </span>
+          </div>
+          <div class="divButtons hide" id="item2Button">
+            <div class="sumButtons" id="rembutton" onclick="remItem2()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 2"><path  d="M0 .375h10v1.25H0V.375Z"/></svg>
+            </div> <p id="sumItem2"></p>
+            <div class="sumButtons" id="addbutton" onclick="addItem2()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path  d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
+            </div> 
+          </div>
+          <div class="product-specs">
+            <p class="product-name">Crème Brûlée</p>
+            <p class="product-description">Vanilla Bean Crème Brûlée</p>
+            <p class="product-price">7.00</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img class="product-3" src="./assets/images/image-macaron-desktop.jpg" alt="Macaron Mix of Five">        
+          <div class="button" id="item3" onclick="addFirstItem3(); addOnOrderItem3(); openningOrder();">
+            <span id="addToCart" class="addToCart">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="cart">Add to Cart
+            </span>
+          </div>
+          <div class="divButtons hide" id="item3Button">
+            <div class="sumButtons" id="rembutton" onclick="remItem3()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 2"><path  d="M0 .375h10v1.25H0V.375Z"/></svg>
+            </div> <p id="sumItem3"></p>
+            <div class="sumButtons" id="addbutton" onclick="addItem3()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path  d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
+            </div> 
+          </div>
+          <div class="product-specs">
+            <p class="product-name">Macaron</p>
+            <p class="product-description">Macaron Mix of Five</p>
+            <p class="product-price">8.00</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img class="product-4" src="./assets/images/image-tiramisu-desktop.jpg" alt="Classic Tiramisu">        
+          <div class="button" id="item4" onclick="addFirstItem4(); addOnOrderItem4(); openningOrder();">
+            <span id="addToCart" class="addToCart">
+                <img src="./assets/images/icon-add-to-cart.svg" alt="cart">Add to Cart
+            </span>
+          </div>
+          <div class="divButtons hide" id="item4Button">
+            <div class="sumButtons" id="rembutton" onclick="remItem4()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 2"><path  d="M0 .375h10v1.25H0V.375Z"/></svg>
+            </div> <p id="sumItem4"></p>
+            <div class="sumButtons" id="addbutton" onclick="addItem4()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path  d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
+            </div> 
+          </div>
+          <div class="product-specs">
+            <p class="product-name">Tiramisu</p>
+            <p class="product-description">Classic Tiramisu</p>
+            <p class="product-price">5.50</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img class="product-5" src="./assets/images/image-baklava-desktop.jpg" alt="Pistachio Baklava">        
+          <div class="button" id="item5" onclick="addFirstItem5(); addOnOrderItem5(); openningOrder();">
+            <span id="addToCart" class="addToCart">
+                <img src="./assets/images/icon-add-to-cart.svg" alt="cart">Add to Cart
+            </span>
+          </div>
+          <div class="divButtons hide" id="item5Button">
+            <div class="sumButtons" id="rembutton" onclick="remItem5()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 2"><path  d="M0 .375h10v1.25H0V.375Z"/></svg>
+            </div> <p id="sumItem5"></p>
+            <div class="sumButtons" id="addbutton" onclick="addItem5()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path  d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
+            </div> 
+          </div>
+          <div class="product-specs">
+            <p class="product-name">Baklava</p>
+            <p class="product-description">Pistachio Baklava</p>
+            <p class="product-price">4.00</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img class="product-6" src="./assets/images/image-meringue-desktop.jpg" alt="Lemon Meringue Pie">        
+          <div class="button" id="item6" onclick="addFirstItem6(); addOnOrderItem6(); openningOrder();">
+            <span id="addToCart" class="addToCart">
+                <img src="./assets/images/icon-add-to-cart.svg" alt="cart">Add to Cart
+            </span>
+          </div>
+          <div class="divButtons hide" id="item6Button">
+            <div class="sumButtons" id="rembutton" onclick="remItem6()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 2"><path  d="M0 .375h10v1.25H0V.375Z"/></svg>
+            </div> <p id="sumItem6"></p>
+            <div class="sumButtons" id="addbutton" onclick="addItem6()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path  d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
+            </div> 
+          </div>
+          <div class="product-specs">
+            <p class="product-name">Pie</p>
+            <p class="product-description">Lemon Meringue Pie</p>
+            <p class="product-price">5.00</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img class="product-7" src="./assets/images/image-cake-desktop.jpg" alt="Red Velvet Cake">        
+          <div class="button" id="item7" onclick="addFirstItem7(); addOnOrderItem7(); openningOrder();">
+            <span id="addToCart" class="addToCart">
+                <img src="./assets/images/icon-add-to-cart.svg" alt="cart">Add to Cart
+            </span>
+          </div>
+          <div class="divButtons hide" id="item7Button">
+            <div class="sumButtons" id="rembutton" onclick="remItem7()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 2"><path  d="M0 .375h10v1.25H0V.375Z"/></svg>
+            </div> <p id="sumItem7"></p>
+            <div class="sumButtons" id="addbutton" onclick="addItem7()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path  d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
+            </div> 
+          </div>
+          <div class="product-specs">
+            <p class="product-name">Cake</p>
+            <p class="product-description">Red Velvet Cake</p>
+            <p class="product-price">4.50</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img class="product-8" src="./assets/images/image-brownie-desktop.jpg" alt="Salted Caramel Brownie">        
+          <div class="button" id="item8" onclick="addFirstItem8(); addOnOrderItem8(); openningOrder();">
+            <span id="addToCart" class="addToCart">
+                <img src="./assets/images/icon-add-to-cart.svg" alt="cart">Add to Cart
+            </span>
+          </div>
+          <div class="divButtons hide" id="item8Button">
+            <div class="sumButtons" id="rembutton" onclick="remItem8()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 2"><path  d="M0 .375h10v1.25H0V.375Z"/></svg>
+            </div> <p id="sumItem8"></p>
+            <div class="sumButtons" id="addbutton" onclick="addItem8()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path  d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
+            </div> 
+          </div>
+          <div class="product-specs">
+            <p class="product-name">Brownie</p>
+            <p class="product-description">Salted Caramel Brownie</p>
+            <p class="product-price">5.50</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img class="product-9" src="./assets/images/image-panna-cotta-desktop.jpg" alt="Vanilla Panna Cotta">        
+          <div class="button" id="item9" onclick="addFirstItem9(); addOnOrderItem9(); openningOrder();">
+            <span id="addToCart" class="addToCart">
+                <img src="./assets/images/icon-add-to-cart.svg" alt="cart">Add to Cart
+            </span>
+          </div>
+          <div class="divButtons hide" id="item9Button">
+            <div class="sumButtons" id="rembutton" onclick="remItem9()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 2"><path  d="M0 .375h10v1.25H0V.375Z"/></svg>
+            </div> <p id="sumItem9"></p>
+            <div class="sumButtons" id="addbutton" onclick="addItem9()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path  d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
+            </div> 
+          </div>
+          <div class="product-specs">
+            <p class="product-name">Panna Cotta</p>
+            <p class="product-description">Vanilla Panna Cotta</p>
+            <p class="product-price">6.50</p>
+          </div>
+        </div>
+
+      </div>
+      
+
+    </div>
+    
+    <div class="order-container">
+      <div>
+        <h2>Your Cart (<p class="orderItens" ></p>)</h2>
+
+        <div id="empty-cart">
+          <img src="./assets/images/illustration-empty-cart.svg" alt="empty-cart">
+          <p class="notice">Your added items will appear here</p>
+        </div>
+      </div>
+      <div class="order-total">
+        
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="#">Mateus Risso Di Blasio</a>.
+    </div>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+</html>

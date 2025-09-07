@@ -1,0 +1,252 @@
+@media screen and (max-width: 375px){
+    body{
+        padding: 0;
+        margin: 0;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;     
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    
+        img{
+            width: 330px;
+            border-radius: 8px;    
+        }
+        
+        .item{
+            margin: 0;
+            height: 400px;
+        }
+
+        .button{
+            width: 155px;
+            img{
+                width: 22px;
+            }
+
+            .addToCart{
+                width: 155px;
+                font-size: 14px;
+                gap: 5px;
+            }
+            
+            .active {
+                width: 155px;
+            }       
+        }
+        .divButtons{
+            width: 155px;
+        }    
+    }
+    
+    .order-container{
+        display: flex;
+        flex-direction: column;
+        min-width: 310px ;
+        max-width: 310px;
+        min-height: 300px;
+        margin: 10px 20px 0 20px;
+        padding: 12.5px;
+        padding-top: 25px;
+
+        div:first-child{
+            h2{
+                width: 275px;
+                font-size: 30px;
+                align-self: flex-start;
+            }
+        }
+
+        #empty-cart{
+            p{
+                font-size: 14px ;
+            }
+        }
+
+
+        .openOrder{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .orderList{
+            width: 275px;
+            
+            p{
+                margin: 5px 0 0 0;
+            }
+            
+            p:first-child{
+                font-size: 16px;
+            }
+
+            p:nth-child(2){
+                font-size: 14px;
+            }
+            
+            p:nth-child(3){
+                font-size: 15px;
+            }
+        }    
+
+        .removeFromOrder{
+            transform: translate(120px, -40px);
+        }
+
+        .orderTotal{
+            width: 290px;
+            
+            h2{
+                margin-top: 15px;
+                transform: translate(0px);
+            }
+        }
+
+        .carbonMsg{
+            width: 290px;
+            padding: 5px 0 5px 0;
+        }
+        
+        .confirmButton{
+            width: 255px;
+            height: 20px;
+            margin-bottom: 25px;
+        }
+    }
+
+    .orderConfirmationContainer{
+        position: absolute;    
+        width: 100vw;
+        background: black;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin: 0;
+        z-index: 1000;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .orderConfirmationBox{
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+        min-height: 300px;
+        align-self: center;
+        align-items: center;
+        border-radius: 10px;
+        padding: 5px;
+
+        .orderConfirmedBoxMsg{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 375px;
+            
+            img{
+                padding-left: 20px;
+                padding-top: 20px;
+                width: 50px;
+            }
+            
+            h1{
+                font-size: 40px; 
+            }
+
+            p{
+                font-size: 16px; 
+                margin-bottom: 30px;
+            }
+        }
+
+        .orderList{
+            width: 290px;
+            padding: 30px 20px 0 20px;
+            
+            p{
+                margin: 5px 0 0 0;
+            }
+            
+            h3{
+                font-size: 14px;
+                width: 150px;
+                overflow: hidden; 
+                white-space: nowrap;
+                text-overflow:ellipsis;
+
+            }
+            
+            p:first-child{
+                font-size: 14px;
+                margin-right: 5px;
+                margin-left: 75px;
+                font-weight: 600;
+                color: hsl(14, 86%, 42%);
+            }
+           
+            p:nth-child(2){
+                font-size: 14px;
+                font-weight: 600;
+                color: hsl(7, 20%, 60%);
+            }
+           
+            p:nth-child(3){
+                width: 30%;
+                transform: translate(30px, -15px);
+
+            }
+        }
+
+        .orderQuantities{
+            display: flex;
+            flex-direction: row;   
+            gap: 10px; 
+            align-items: center;
+            font-size: 18px;
+            border-bottom: 1px solid hsl(14, 25%, 72%, 0.2);
+            padding-bottom: 20px;
+        }        
+    }
+
+    .orderTotal.confirmedBox{
+        display: flex;
+        width: 290px;
+        height: 82px;
+        padding: 0 20px 0 20px;
+        align-items: center;
+        color: black;
+        justify-content: space-between;
+        border-radius: 0 0 5px 5px;
+        background-color: hsl(13, 31%, 94%);
+        
+        h2{
+            margin-top: 15px;
+        }
+    }
+
+    .ConfirmBoxOrderListImages{
+        img{
+            transform: translate(0, 50px);
+        }
+    }
+
+    .orderConfirmationBox:first-child{        
+        padding: 25px 0 25px 0;
+    }
+
+    .newOrderButton{
+        width: 290px;
+    }
+
+    footer{
+        margin-top: 50px;
+        
+        div{
+            height: 50px;
+        }
+    }
+}
