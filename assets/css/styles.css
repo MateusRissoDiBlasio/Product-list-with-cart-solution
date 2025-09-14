@@ -302,9 +302,17 @@ h1{
         align-items: center;
         color: black;
         justify-content: space-between;
+        align-content: center;
         
+        p{
+            width: 120px;
+        }
+
         h2{
-            margin-top: 15px;
+            justify-content: flex-end;
+            align-self: center;
+            margin: 0;
+            
         }
     }
     
