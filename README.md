@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [https://mateusrissodiblasio.github.io/blog-preview-card/](https://mateusrissodiblasio.github.io/Product-list-with-cart-solution/)
+- Live Site URL: [https://mateusrissodiblasio.github.io/Product-list-with-cart-solution//](https://mateusrissodiblasio.github.io/Product-list-with-cart-solution/)
 
 ## My process
 
@@ -48,7 +48,7 @@ Users should be able to:
 
 ### What I learned
 
-There are many ways to achieve this final result, but within the process I've only used what i know so far, so it became harder, therefore solving this challenge showed me that, although its not the simpler way, I did it, and this motivates me to keep going.
+There are many ways to achieve this final result, but within the process I've only used what I know so far, so it became harder, therefore solving this challenge showed me that, although its not the simpler way, I did it, and this motivates me to keep going.
 
 ### Continued development
 
